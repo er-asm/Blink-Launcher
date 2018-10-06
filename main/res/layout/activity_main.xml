@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_view"
+    tools:context="com.example.darklord.blinklauncher.MainActivity">
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:handle="@+id/handle"
+        android:content="@+id/content">
+
+        <ImageView
+            android:id="@id/handle"
+            android:background="@mipmap/ic_launcher"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <GridView
+            android:id="@id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/balck_tansparent"
+            android:columnWidth="80dp"
+            android:padding="20dp"
+            android:numColumns="4"
+            android:verticalSpacing="20dp"
+            android:horizontalSpacing="40dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+
+    </SlidingDrawer>
+
+</RelativeLayout>
